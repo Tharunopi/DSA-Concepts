@@ -22,5 +22,16 @@ class LinkedLists:
         cur.next = new_node
         return old_node
     
-    def display(self):
-        pass
+    def display(self, node):
+        if node:
+            cur = node
+            while cur:
+                print(cur.head, end=" -> ")
+                cur = cur.next
+            print(None)
+        
+ll = LinkedLists()
+k = ll.add_begning(3)
+d = ll.add_begning(2, k)
+m = ll.add_begning(1, d)
+ll.display(m)
