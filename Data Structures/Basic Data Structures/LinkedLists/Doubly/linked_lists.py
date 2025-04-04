@@ -26,14 +26,14 @@ def show(node, mode=None):
 
 def remove(node, value):
     cur = node
+    if cur.value == value:
+        return cur.next
     while cur:
         if cur.value == value:
             if cur.prev:
                 cur.prev.next = cur.next
             if cur.next:
                 cur.next.prev = cur.prev
-            if cur == node:
-                return cur.next
 
         cur = cur.next
     return node
@@ -42,5 +42,5 @@ a = add(1)
 b = add(2, a)
 c = add(3, b)
 # show(a, 'f')
-d = remove(c, 4)
+d = remove(c, 1)
 show(d)
