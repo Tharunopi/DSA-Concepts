@@ -43,5 +43,3 @@ class Tree:
 
 tree = Tree([1, 2, 3, 4])
 root = tree.createTree()
-print(root.value)
-print(root.left)
