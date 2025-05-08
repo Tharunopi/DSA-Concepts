@@ -41,5 +41,3 @@ class Tree:
         except IndexError as e:
             print(e)
 
-tree = Tree([1, 2, 3, 4])
-root = tree.createTree()

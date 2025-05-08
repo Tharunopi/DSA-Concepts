@@ -10,11 +10,3 @@ class Traversal:
             self.inorder(node.left)
             print(node.value)
             self.inorder(node.right)
-
-    
-
-tree = Tree([1, 2, 3, 4])
-root = tree.createTree()
-
-looper = Traversal()
-looper.inorder(node=root)
