@@ -3,6 +3,7 @@ from collections import deque
 from level_order import levelOrder
 
 def searchRecursive(root, target):
+    # base case 
     if root is None:
         return False
     
